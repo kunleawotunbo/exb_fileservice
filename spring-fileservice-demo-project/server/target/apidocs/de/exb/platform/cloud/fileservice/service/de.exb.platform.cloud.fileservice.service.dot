@@ -19,6 +19,8 @@ digraph G {
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + HelperService() </td></tr>
+<tr><td align="left" balign="left"> + deleteFile(aPath : String, fileUpload : FileUpload) </td></tr>
+<tr><td align="left" balign="left"> + loadFileAsResource(fileName : String) : Resource </td></tr>
 <tr><td align="left" balign="left"> + getCurrentDateTime() : LocalDateTime </td></tr>
 <tr><td align="left" balign="left"> + fileUpload(dFile : MultipartFile) : Map&lt;&gt; </td></tr>
 		</table></td></tr>
@@ -39,6 +41,7 @@ digraph G {
 <tr><td align="left" balign="left"> + save(fileUpload : FileUpload) : FileUpload </td></tr>
 <tr><td align="left" balign="left"> + findAll() : List&lt;FileUpload&gt; </td></tr>
 <tr><td align="left" balign="left"> + findAll(pageable : Pageable) : Page&lt;FileUpload&gt; </td></tr>
+<tr><td align="left" balign="left"> + delete(fileUpload : FileUpload) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FileUploadServiceImpl.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.service.FileUploadService
@@ -57,6 +60,7 @@ digraph G {
 <tr><td align="left" balign="left"><font face="arial italic" point-size="10.0"> + save(fileUpload : FileUpload) : FileUpload </font></td></tr>
 <tr><td align="left" balign="left"><font face="arial italic" point-size="10.0"> + findAll() : List&lt;FileUpload&gt; </font></td></tr>
 <tr><td align="left" balign="left"><font face="arial italic" point-size="10.0"> + findAll(pageable : Pageable) : Page&lt;FileUpload&gt; </font></td></tr>
+<tr><td align="left" balign="left"><font face="arial italic" point-size="10.0"> + delete(fileUpload : FileUpload) </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./FileUploadService.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.service.FileServiceImpl

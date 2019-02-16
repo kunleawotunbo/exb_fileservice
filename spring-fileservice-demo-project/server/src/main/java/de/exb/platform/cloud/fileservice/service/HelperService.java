@@ -5,15 +5,28 @@
  */
 package de.exb.platform.cloud.fileservice.service;
 
+import de.exb.platform.cloud.fileservice.model.FileUpload;
 import de.exb.platform.cloud.fileservice.payload.FileBucket;
 import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -27,7 +40,23 @@ public class HelperService {
     @Value("${app.uploadPath}")
     private String uploadPath;
     
+    @Autowired
+    private FileUploadService fileUploadService;
     
+    
+    @Transactional
+    public void deleteFile(String aPath, FileUpload fileUpload){
+        fileUploadService.delete(fileUpload);
+        try {
+            
+            Path filePath = Paths.get(aPath);
+            Files.delete(filePath);
+        } catch (IOException ex) {
+            log.error("Error - " + ex.getMessage());
+        } 
+        
+    }
+     
     public LocalDateTime getCurrentDateTime() {
         
         return LocalDateTime.now();

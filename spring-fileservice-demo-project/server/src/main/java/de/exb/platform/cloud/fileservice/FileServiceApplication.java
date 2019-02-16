@@ -16,7 +16,7 @@ public class FileServiceApplication {
     }
 
     public static void main(final String[] args) {
-        System.out.println("Starting application");
+        
         SpringApplication.run(FileServiceApplication.class, args);
     }
 }

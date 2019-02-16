@@ -20,8 +20,10 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + FileServiceController(fileService : FileService, fileUploadService : FileUploadService, helperService : HelperService) </td></tr>
 <tr><td align="left" balign="left"> + getAllFiles() : List&lt;FileUpload&gt; </td></tr>
+<tr><td align="left" balign="left"> + getFileName(aSessionId : String, fileName : String, request : HttpServletRequest) : ResponseEntity&lt;?&gt; </td></tr>
 <tr><td align="left" balign="left"> + uploadFile(aSessionId : String, uploadfile : MultipartFile) : ResponseEntity&lt;?&gt; </td></tr>
 <tr><td align="left" balign="left"> + uploadMultipleFiles(aSessionId : String, files : MultipartFile[]) : List&lt;?&gt; </td></tr>
+<tr><td align="left" balign="left"> + deleteFile(aSessionId : String, fileName : String) : ResponseEntity&lt;?&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FileServiceController.html", fontname="arial", fontcolor="black", fontsize=10.0];
 }

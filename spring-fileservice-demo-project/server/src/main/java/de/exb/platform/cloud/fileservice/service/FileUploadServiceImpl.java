@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FileUploadServiceImpl implements FileUploadService{
 
-    private FileUploadRepository fileUploadRepository;
+    private final FileUploadRepository fileUploadRepository;
 
     @Autowired
     public FileUploadServiceImpl(FileUploadRepository fileUploadRepository) {
@@ -56,6 +56,11 @@ public class FileUploadServiceImpl implements FileUploadService{
     @Override
     public Page<FileUpload> findAll(Pageable pageable) {
         return fileUploadRepository.findAll(pageable);
+    }
+
+    @Override
+    public void delete(FileUpload fileUpload) {
+        fileUploadRepository.delete(fileUpload);
     }
 
     

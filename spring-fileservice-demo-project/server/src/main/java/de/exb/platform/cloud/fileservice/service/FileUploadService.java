@@ -22,4 +22,5 @@ public interface FileUploadService {
     FileUpload save(FileUpload fileUpload);
     List<FileUpload> findAll();
     Page<FileUpload> findAll(Pageable pageable);
+    public void delete(FileUpload fileUpload);  
 }

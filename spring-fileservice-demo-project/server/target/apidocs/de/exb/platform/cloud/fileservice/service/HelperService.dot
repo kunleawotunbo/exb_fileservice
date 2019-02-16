@@ -19,6 +19,8 @@ digraph G {
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + HelperService() </td></tr>
+<tr><td align="left" balign="left"> + deleteFile(aPath : String, fileUpload : FileUpload) </td></tr>
+<tr><td align="left" balign="left"> + loadFileAsResource(fileName : String) : Resource </td></tr>
 <tr><td align="left" balign="left"> + getCurrentDateTime() : LocalDateTime </td></tr>
 <tr><td align="left" balign="left"> + fileUpload(dFile : MultipartFile) : Map&lt;&gt; </td></tr>
 		</table></td></tr>
