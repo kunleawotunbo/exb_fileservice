@@ -9,21 +9,8 @@ digraph G {
 	node [fontname="arial",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// de.exb.platform.cloud.fileservice.config.WebMvcConfig
-	c0 [label=<<table title="de.exb.platform.cloud.fileservice.config.WebMvcConfig" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WebMvcConfig.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> WebMvcConfig </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + WebMvcConfig() </td></tr>
-<tr><td align="left" balign="left"> + addCorsMappings(registry : CorsRegistry) </td></tr>
-		</table></td></tr>
-		</table>>, URL="./WebMvcConfig.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.config.SwaggerConfig
-	c1 [label=<<table title="de.exb.platform.cloud.fileservice.config.SwaggerConfig" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwaggerConfig.html">
+	c0 [label=<<table title="de.exb.platform.cloud.fileservice.config.SwaggerConfig" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwaggerConfig.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SwaggerConfig </td></tr>
 		</table></td></tr>
@@ -34,11 +21,10 @@ digraph G {
 <tr><td align="left" balign="left"> + SwaggerConfig() </td></tr>
 <tr><td align="left" balign="left"> + api() : Docket </td></tr>
 <tr><td align="left" balign="left"> + securityInfo() : SecurityConfiguration </td></tr>
-<tr><td align="left" balign="left"> # addResourceHandlers(registry : ResourceHandlerRegistry) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SwaggerConfig.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.config.AuditingConfig
-	c2 [label=<<table title="de.exb.platform.cloud.fileservice.config.AuditingConfig" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AuditingConfig.html">
+	c1 [label=<<table title="de.exb.platform.cloud.fileservice.config.AuditingConfig" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AuditingConfig.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AuditingConfig </td></tr>
 		</table></td></tr>

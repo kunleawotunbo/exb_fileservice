@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// de.exb.platform.cloud.fileservice.config.SwaggerConfig
-	c379 [label=<<table title="de.exb.platform.cloud.fileservice.config.SwaggerConfig" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SwaggerConfig.html">
+	c354 [label=<<table title="de.exb.platform.cloud.fileservice.config.SwaggerConfig" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SwaggerConfig.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SwaggerConfig </td></tr>
 		</table></td></tr>
@@ -21,7 +21,6 @@ digraph G {
 <tr><td align="left" balign="left"> + SwaggerConfig() </td></tr>
 <tr><td align="left" balign="left"> + api() : Docket </td></tr>
 <tr><td align="left" balign="left"> + securityInfo() : SecurityConfiguration </td></tr>
-<tr><td align="left" balign="left"> # addResourceHandlers(registry : ResourceHandlerRegistry) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SwaggerConfig.html", fontname="arial", fontcolor="black", fontsize=10.0];
 }

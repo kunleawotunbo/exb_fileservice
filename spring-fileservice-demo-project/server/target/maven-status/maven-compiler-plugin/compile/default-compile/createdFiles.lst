@@ -11,7 +11,6 @@ de\exb\platform\cloud\fileservice\service\FileService.class
 de\exb\platform\cloud\fileservice\service\FileUploadServiceImpl.class
 de\exb\platform\cloud\fileservice\payload\ApiResponse.class
 de\exb\platform\cloud\fileservice\service\FileServiceImpl$1.class
-de\exb\platform\cloud\fileservice\config\WebMvcConfig.class
 de\exb\platform\cloud\fileservice\config\SwaggerConfig.class
 de\exb\platform\cloud\fileservice\service\HelperService.class
 de\exb\platform\cloud\fileservice\model\audit\DateAudit.class

@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// de.exb.platform.cloud.fileservice.service.HelperService
-	c122 [label=<<table title="de.exb.platform.cloud.fileservice.service.HelperService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HelperService.html">
+	c114 [label=<<table title="de.exb.platform.cloud.fileservice.service.HelperService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HelperService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HelperService </td></tr>
 		</table></td></tr>
@@ -20,13 +20,12 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + HelperService() </td></tr>
 <tr><td align="left" balign="left"> + deleteFile(aPath : String, fileUpload : FileUpload) </td></tr>
-<tr><td align="left" balign="left"> + loadFileAsResource(fileName : String) : Resource </td></tr>
 <tr><td align="left" balign="left"> + getCurrentDateTime() : LocalDateTime </td></tr>
 <tr><td align="left" balign="left"> + fileUpload(dFile : MultipartFile) : Map&lt;&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HelperService.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.service.FileUploadServiceImpl
-	c123 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileUploadServiceImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileUploadServiceImpl.html">
+	c115 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileUploadServiceImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileUploadServiceImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FileUploadServiceImpl </td></tr>
 		</table></td></tr>
@@ -45,7 +44,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./FileUploadServiceImpl.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.service.FileUploadService
-	c124 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileUploadService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileUploadService.html">
+	c116 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileUploadService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileUploadService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FileUploadService </td></tr>
@@ -64,7 +63,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./FileUploadService.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.service.FileServiceImpl
-	c125 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileServiceImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileServiceImpl.html">
+	c117 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileServiceImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileServiceImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FileServiceImpl </td></tr>
 		</table></td></tr>
@@ -82,7 +81,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./FileServiceImpl.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.service.FileServiceException
-	c126 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileServiceException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileServiceException.html">
+	c118 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileServiceException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileServiceException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FileServiceException </td></tr>
 		</table></td></tr>
@@ -95,7 +94,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./FileServiceException.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// de.exb.platform.cloud.fileservice.service.FileService
-	c127 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileService.html">
+	c119 [label=<<table title="de.exb.platform.cloud.fileservice.service.FileService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FileService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FileService </td></tr>
@@ -113,8 +112,8 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./FileService.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//de.exb.platform.cloud.fileservice.service.FileUploadServiceImpl implements de.exb.platform.cloud.fileservice.service.FileUploadService
-	c124:p -> c123:p [dir=back,arrowtail=empty,style=dashed];
+	c116:p -> c115:p [dir=back,arrowtail=empty,style=dashed];
 	//de.exb.platform.cloud.fileservice.service.FileServiceImpl implements de.exb.platform.cloud.fileservice.service.FileService
-	c127:p -> c125:p [dir=back,arrowtail=empty,style=dashed];
+	c119:p -> c117:p [dir=back,arrowtail=empty,style=dashed];
 }
 

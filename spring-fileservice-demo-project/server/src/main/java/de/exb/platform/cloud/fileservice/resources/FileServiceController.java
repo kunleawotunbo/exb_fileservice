@@ -7,6 +7,7 @@ import de.exb.platform.cloud.fileservice.service.FileServiceException;
 import de.exb.platform.cloud.fileservice.service.FileUploadService;
 import de.exb.platform.cloud.fileservice.service.HelperService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -71,6 +72,7 @@ public class FileServiceController {
      *
      * @return
      */
+    @ApiOperation(value = "List all uploaded files") 
     @GetMapping("/all")
     public List<FileUpload> getAllFiles() {
 
@@ -84,6 +86,7 @@ public class FileServiceController {
      * @param fileName
      * @return
      */
+    @ApiOperation(value = "Get file by fine name") 
     @GetMapping("/fileName")
     public ResponseEntity<?> getFileName(
             @RequestParam(name = "aSessionId", required = true) String aSessionId,
@@ -136,6 +139,7 @@ public class FileServiceController {
      * @param uploadfile
      * @return
      */
+    @ApiOperation(value = "Upload single file to the backend service") 
     @PostMapping("/upload")
     public ResponseEntity<?> uploadFile(
             @RequestParam(name = "aSessionId", required = true) String aSessionId,
@@ -189,6 +193,7 @@ public class FileServiceController {
      * @param files
      * @return
      */
+    @ApiOperation(value = "Upload multiple files") 
     @PostMapping("/uploadMultipleFiles")
     public List<? extends ResponseEntity<?>> uploadMultipleFiles(
             @RequestParam(name = "aSessionId", required = true) String aSessionId,
@@ -206,6 +211,7 @@ public class FileServiceController {
      * @param fileName
      * @return 
      */
+    @ApiOperation(value = "To delete a file") 
     @DeleteMapping("/delete")
     public ResponseEntity<?> deleteFile(
             @RequestParam(name = "aSessionId", required = true) String aSessionId,
