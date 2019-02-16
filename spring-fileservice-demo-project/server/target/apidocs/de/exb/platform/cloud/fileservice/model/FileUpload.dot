@@ -18,6 +18,7 @@ digraph G {
 <tr><td align="left" balign="left">  </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + FileUpload(id : Long, originalFileName : String, batchUploadFileName : String, referenceNumber : String, createdAt : LocalDateTime, updatedAt : LocalDateTime) </td></tr>
 <tr><td align="left" balign="left"> + FileUpload() </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FileUpload.html", fontname="arial", fontcolor="black", fontsize=10.0];

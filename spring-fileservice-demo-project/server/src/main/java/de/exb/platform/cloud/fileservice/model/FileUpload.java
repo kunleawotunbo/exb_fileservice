@@ -46,5 +46,19 @@ public class FileUpload {
     
     @NotNull
     private LocalDateTime updatedAt;
+
+    public FileUpload(Long id, String originalFileName, String batchUploadFileName, String referenceNumber, LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.id = id;
+        this.originalFileName = originalFileName;
+        this.batchUploadFileName = batchUploadFileName;
+        this.referenceNumber = referenceNumber;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+
+    public FileUpload() {
+    }
+    
+    
     
 }

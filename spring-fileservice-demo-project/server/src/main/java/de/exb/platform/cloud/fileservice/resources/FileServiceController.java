@@ -8,35 +8,23 @@ import de.exb.platform.cloud.fileservice.service.FileUploadService;
 import de.exb.platform.cloud.fileservice.service.HelperService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.InputStreamResource;
-import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -178,7 +166,8 @@ public class FileServiceController {
             // Save the file
             fileUploadService.save(fileUpload);
 
-            return ResponseEntity.ok(new ApiResponse(true, uploadfile.getOriginalFilename() + " Uploaded successfully"));
+            //return ResponseEntity.ok(new ApiResponse(true, uploadfile.getOriginalFilename() + " Uploaded successfully"));
+            return new ResponseEntity<>(HttpStatus.CREATED);
         } catch (FileServiceException ex) {
             log.error("Error - " + ex);
         }
