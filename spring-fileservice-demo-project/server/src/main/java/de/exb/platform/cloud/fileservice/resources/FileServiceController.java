@@ -72,6 +72,7 @@ public class FileServiceController {
      *
      * @param aSessionId
      * @param fileName
+     * @param request
      * @return
      */
     @ApiOperation(value = "Get file by fine name") 

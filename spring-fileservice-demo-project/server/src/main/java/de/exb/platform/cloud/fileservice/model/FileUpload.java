@@ -5,7 +5,6 @@
  */
 package de.exb.platform.cloud.fileservice.model;
 
-import de.exb.platform.cloud.fileservice.model.audit.DateAudit;
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

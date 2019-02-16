@@ -3,7 +3,6 @@ de\exb\platform\cloud\fileservice\resources\FileServiceController.class
 de\exb\platform\cloud\fileservice\service\FileUploadService.class
 de\exb\platform\cloud\fileservice\service\FileServiceImpl.class
 de\exb\platform\cloud\fileservice\service\FileServiceException.class
-de\exb\platform\cloud\fileservice\config\AuditingConfig.class
 de\exb\platform\cloud\fileservice\FileServiceApplication.class
 de\exb\platform\cloud\fileservice\payload\FileBucket.class
 de\exb\platform\cloud\fileservice\repository\FileUploadRepository.class

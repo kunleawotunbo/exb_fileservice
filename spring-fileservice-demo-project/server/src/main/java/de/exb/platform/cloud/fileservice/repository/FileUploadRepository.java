@@ -6,15 +6,12 @@
 package de.exb.platform.cloud.fileservice.repository;
 
 import de.exb.platform.cloud.fileservice.model.FileUpload;
-import java.util.List;
 import java.util.Optional;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- *
+ *  FileUploadRepository to access the database
  * @author Olakunle Awotunbo
  */
 @Repository
@@ -23,6 +20,4 @@ public interface FileUploadRepository extends JpaRepository<FileUpload, Long>{
     Optional<FileUpload> findByOriginalFileName(String originalFileName);
     Optional<FileUpload> findById(Long id);
     FileUpload save(FileUpload fileUpload);
-    //List<FileUpload> findAll();
-    //Page<FileUpload> findAll(Pageable pageable);
 }

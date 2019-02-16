@@ -74,12 +74,6 @@ public class FileClientImpl implements FileClient {
         ResponseEntity<byte[]> response = restTemplate.exchange(
                 hostURL + "/fileName?aSessionId="+ aSessionId + "&fileName="+ fileName,
                 HttpMethod.GET, entity, byte[].class, "1");
-
-        /*
-        if (response.getStatusCode() == HttpStatus.OK) {
-            Files.write(Paths.get("google.png"), response.getBody());
-        }
-        */
         
         return response;
     }
