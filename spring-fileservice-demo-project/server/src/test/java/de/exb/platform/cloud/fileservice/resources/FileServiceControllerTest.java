@@ -33,16 +33,23 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 public class FileServiceControllerTest extends AbstractControllerTest {
 
+    /*
     private InputStream is;
     String aSessionId = "dfsfsdf32323"; // Dummy session id
     // Filename should be unique to avoid new file overwriting previous file on storage path
     String referenceNumber = String.valueOf(System.currentTimeMillis());
     String fileName = "test_" + referenceNumber + ".txt";
     String deletefileName = fileName;
-
+    */
+     private InputStream is;
+    String aSessionId = ""; // Dummy session id
+    String fileName = "";
+    
     @Before
     public void setUp() {
         super.setUp();
+        aSessionId = "dfsfsdf32323"; // Dummy session id
+        fileName = "test.txt";
 
     }
 
@@ -119,16 +126,16 @@ public class FileServiceControllerTest extends AbstractControllerTest {
     @Test
     public void testDeleteFile() throws Exception {
         System.out.println("deleteFile");
-        
+
         String dFile = "test_1550337839810.txt";
-        String uri = super.hostUrl + "/delete?aSessionId=" + aSessionId + "&fileName=" + dFile;
+        String uri = super.hostUrl + "/delete?aSessionId=" + aSessionId + "&fileName=" + fileName;
         System.out.println("uri :: " + uri);
-              
+
         this.mockMvc.perform(MockMvcRequestBuilders
-            .delete(uri)
-            .accept(MediaType.APPLICATION_JSON))
-            .andExpect(status().isOk());
-        
+                .delete(uri)
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+
     }
 
 }
